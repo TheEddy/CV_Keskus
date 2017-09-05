@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CV Keskus</string>
+    <string name="uploadDate">2017.09.04</string>
+    <string name="daysRemain">15 d.</string>
+    <string name="compName">CompName</string>
+    <string name="payment">Payment</string>
+    <string name="city">Tallinn</string>
+    <string name="vip">VIP: 9</string>
+    <string name="vacancy">Vacancy</string>
+    <string name="daysBefore">before</string>
+    <string name="newOne">new</string>
+    <string name="favorite">Favorite</string>
+</resources>
