@@ -11,18 +11,21 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="81dp">
 
+    <!-- Allah Akbar Ишналла-->
+
     <ScrollView
         android:layout_width="360dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
         android:visibility="visible"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp">
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <TableLayout
@@ -52,10 +55,11 @@
                         android:orientation="horizontal"
                         android:visibility="visible">
 
-                        <EditText
-                            android:id="@+id/editText7"
+                        <TextView
+                            android:id="@+id/vip"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
+                            android:layout_marginTop="8dp"
                             android:ems="10"
                             android:inputType="none"
                             android:maxLines="1"
@@ -74,10 +78,11 @@
                         android:orientation="horizontal"
                         android:visibility="visible">
 
-                        <EditText
-                            android:id="@+id/editText3"
+                        <TextView
+                            android:id="@+id/before"
                             android:layout_width="46dp"
                             android:layout_height="30dp"
+                            android:layout_marginTop="4dp"
                             android:ems="10"
                             android:inputType="none"
                             android:text="@string/daysBefore"
@@ -94,8 +99,8 @@
                         android:orientation="horizontal"
                         android:visibility="visible">
 
-                        <EditText
-                            android:id="@+id/editText8"
+                        <TextView
+                            android:id="@+id/novelty"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_weight="1"
@@ -117,10 +122,10 @@
                     android:visibility="visible">
 
                     <ImageView
-                        android:id="@+id/imageView2"
+                        android:id="@+id/logo"
                         android:layout_width="60dp"
                         android:layout_height="75dp"
-                        android:contentDescription="@string/compname"
+                        android:contentDescription="@string/compName"
                         android:paddingLeft="5dp"
                         android:paddingRight="5dp"
                         android:visibility="visible"
@@ -139,8 +144,8 @@
                         android:layout_gravity="start"
                         android:orientation="horizontal">
 
-                        <EditText
-                            android:id="@+id/editText2"
+                        <TextView
+                            android:id="@+id/vacancy"
                             android:layout_width="125dp"
                             android:layout_height="wrap_content"
                             android:ems="10"
@@ -159,12 +164,13 @@
                         android:layout_gravity="start"
                         android:orientation="horizontal">
 
-                        <EditText
-                            android:id="@+id/editText9"
+                        <TextView
+                            android:id="@+id/company"
                             android:layout_width="125dp"
                             android:layout_height="wrap_content"
                             android:ems="10"
                             android:inputType="none"
+                            android:paddingLeft="2dp"
                             android:paddingTop="5dp"
                             android:text="@string/compName"
                             android:textAlignment="viewStart"
@@ -191,18 +197,14 @@
                         android:orientation="horizontal"
                         android:visibility="visible">
 
-                        <EditText
-                            android:id="@+id/editText5"
+                        <TextView
+                            android:id="@+id/town"
+                            android:layout_marginTop="-3dp"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical|fill_horizontal|center"
-                            android:layout_weight="0.55"
-                            android:ems="10"
-                            android:gravity="center_vertical|center_horizontal|center"
                             android:inputType="none"
                             android:text="@string/city"
-                            android:textAlignment="center"
-                            android:textSize="12sp"
+                            android:textSize="18sp"
                             android:visibility="visible" />
                     </LinearLayout>
 
@@ -212,12 +214,13 @@
                         android:layout_gravity="center_vertical|center_horizontal|center"
                         android:orientation="horizontal">
 
-                        <EditText
-                            android:id="@+id/editText10"
+                        <TextView
+                            android:id="@+id/payment"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:ems="10"
                             android:inputType="none"
+                            android:paddingTop="5dp"
                             android:text="@string/payment"
                             android:textAlignment="viewStart"
                             android:textSize="10sp"
@@ -242,18 +245,18 @@
                         android:orientation="horizontal"
                         android:visibility="visible">
 
-                        <EditText
-                            android:id="@+id/editText6"
-                            android:layout_width="50dp"
-                            android:layout_height="25dp"
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:ems="10"
+                            android:layout_marginTop="-8dp"
                             android:inputType="none"
-                            android:paddingTop="5dp"
+                            android:paddingTop="6dp"
                             android:text="@string/uploadDate"
                             android:textAlignment="center"
                             android:textColor="@android:color/darker_gray"
-                            android:textSize="8sp"
+                            android:textSize="10sp"
                             android:visibility="visible"
                             tools:ignore="SmallSp" />
                     </LinearLayout>
@@ -265,8 +268,8 @@
                         android:orientation="horizontal"
                         android:visibility="visible">
 
-                        <EditText
-                            android:id="@+id/editText12"
+                        <TextView
+                            android:id="@+id/time"
                             android:layout_width="50dp"
                             android:layout_height="25dp"
                             android:layout_weight="1"
@@ -274,7 +277,7 @@
                             android:inputType="none"
                             android:paddingTop="5dp"
                             android:text="@string/daysRemain"
-                            android:textAlignment="viewEnd"
+                            android:textAlignment="center"
                             android:textColor="@android:color/darker_gray"
                             android:textSize="8sp"
                             android:visibility="visible"
@@ -291,7 +294,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView"
+                        android:id="@+id/favorite"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:contentDescription="@string/favorite"
